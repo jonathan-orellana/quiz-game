@@ -132,8 +132,22 @@ body {
 @media (max-width: 900px) {
   .question-page {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    /* center everything horizontally */
     padding: 30px 20px 70px;
+  }
+
+  .question-side {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* center the chapter name box */
+  }
+
+  .question-text {
+    text-align: center;
+    /* center the text itself */
   }
 
   .answers-side {
