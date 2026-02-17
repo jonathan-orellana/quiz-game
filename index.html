@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Quiz</title>
+
+  <link rel="stylesheet" href="static/styles/question-board.css" />
+  <link rel="stylesheet" href="static/styles/gameover.css" />
+</head>
+
+<body>
+
+  <!-- QUESTION SCREEN -->
+  <main id="questionScreen" class="question-page">
+    <div class="score-bottom">
+      <span class="score-label">Score:</span>
+      <span id="scoreValue" class="score-value">0</span>
+    </div>
+
+    <div class="question-side">
+      <div id="questionText" class="question-text">Loading question...</div>
+    </div>
+
+    <div class="answers-side">
+      <h2 class="answers-title">Choose an answer</h2>
+
+      <!-- options injected by JS -->
+      <div id="answersForm" class="answers-form"></div>
+    </div>
+  </main>
+
+  <!-- GAME OVER SCREEN -->
+  <main id="gameoverScreen" style="display:none;">
+    <section class="gameover-page" style="text-align:center; padding:40px 20px;">
+      <h1>Game Over</h1>
+      <p>Your final score:</p>
+      <p id="finalScore" class="score">0</p>
+
+      <div style="margin-top:20px;">
+        <button id="restartButton" class="button">Start Over</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/questions.js"></script>
+  <script src="js/controller.js"></script>
+</body>
+
+</html>

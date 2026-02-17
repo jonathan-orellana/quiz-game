@@ -1,0 +1,23 @@
+.score {
+  font-size: 1.5rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+.button {
+  border: none;
+  background-color: #89CFF0;
+  color: white;
+  border-radius: 0.7rem;
+  padding: 12px 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  filter: brightness(0.95);
+}
