@@ -131,10 +131,19 @@ body {
 
 @media (max-width: 900px) {
   .question-page {
+    height: 100vh;
+    /* force fit to screen */
+    min-height: 100vh;
+    padding: 15px 15px 20px;
+    /* smaller padding */
+    box-sizing: border-box;
+
     flex-direction: column;
     align-items: center;
-    /* center everything horizontally */
-    padding: 30px 20px 70px;
+    justify-content: center;
+    /* vertically center everything */
+    gap: 1.2rem;
+    /* reduce spacing */
   }
 
   .question-side {
@@ -142,22 +151,44 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* center the chapter name box */
   }
 
   .question-text {
     text-align: center;
-    /* center the text itself */
+    font-size: 1.8rem;
+    /* slightly smaller so it fits */
+    line-height: 1.2;
   }
 
   .answers-side {
     width: 100%;
-    max-width: 360px;
-    margin-top: 25px;
+    max-width: 340px;
+    margin-top: 10px;
+  }
+
+  .answers-title {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .answers-form {
+    gap: 8px;
+    /* tighter spacing */
+  }
+
+  .answer-option {
+    padding: 12px 14px;
+    /* smaller buttons */
   }
 
   .score-bottom {
     position: static;
-    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+
+  .answers-title {
+    display: none;
   }
 }
