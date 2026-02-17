@@ -1,6 +1,5 @@
 // js/questions.js
 
-// Pool of all universities (used to generate wrong answers)
 window.UNIVERSITIES = [
   "University of Miami",
   "University of Florida",
@@ -20,7 +19,6 @@ window.UNIVERSITIES = [
   "Radford University"
 ];
 
-// Questions = chapter name + correct university
 window.QUESTIONS = [
   { text: "Kogi", correct: "University of Miami", points: 100 },
   { text: "Czar", correct: "University of Florida", points: 100 },
@@ -36,5 +34,6 @@ window.QUESTIONS = [
   { text: "Pantheon", correct: "Abraham Baldwin Agricultural College", points: 100 },
   { text: "Himalyias", correct: "Emory University", points: 100 },
   { text: "Fookugin", correct: "University of North Carolina Charlotte", points: 100 },
-  { text: "Sacbe", correct: "Appalachian State University", points: 100 }
+  { text: "Sacbe", correct: "Appalachian State University", points: 100 },
+  { text: "Waya", correct: "Radford University", points: 100 }
 ];
