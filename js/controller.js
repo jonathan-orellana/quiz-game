@@ -89,7 +89,7 @@ function handleAnswer(label, idx) {
     label.style.color = "#000";
     state.score += window.QUESTIONS[state.index].points ?? 0;
   } else {
-    label.style.background = "#FF2C2C";
+    label.style.background = "#e3e3e3";
     label.style.color = "#fff";
 
     // Highlight the correct one in blue too
